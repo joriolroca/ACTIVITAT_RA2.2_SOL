@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici </title>
+</head>
+<body>
+    <script>
+
+        // EXERCICI 1
+        // const num = prompt("introdueix un número");
+        // if (num) {
+        //     let numNumber = Number(num);
+        //     let text = !isNaN(numNumber) ? "És un enter" : "No és un enter";
+        //     console.log(text);
+        // } else {
+        //     console.log("Has d'introduir un valor");
+        // }
+
+
+        //  EXERCICI 2
+        // const num = prompt("introdueix un número");
+        // if (num) {
+        //     let numNumber = Number(num);
+        //     if (Number.isInteger(numNumber)) {
+        //         console.log("El número és enter");
+        //     } else {
+        //         console.log("El número és decimal");
+        //     }
+        // } else {
+        //     console.log("Has d'introduir un valor");
+        // }
+
+
+        //   EXERCICI 3
+        // const num = prompt("Introdueix un número");
+        // if (num) {
+        //   let tempNum = Number(num);
+        //   if (!Number.isNaN(tempNum)) {
+        //     let opcio = prompt("Introdueix una 'C' o 'F'");
+        //     if (opcio) {
+        //       if (opcio.toLowerCase() === "c") {
+        //         // C= ((F - 32) * 5.0) / 9.0
+        //         const tempC = ((tempNum - 32) * 5.0) / 9.0;
+        //         console.log(tempC);
+        //       } else if (opcio.toLowerCase() === "f") {
+        //         // ºF = (9.0/5.0)* (ºC) + 32.
+        //         const tempT = (9.0 / 5.0) * tempNum + 32;
+        //         console.log(tempT);
+        //       }
+        //     } else {
+        //       console.log("Has d'introduir una opció de temperatura");
+        //     }
+        //   } else {
+        //     console.log("Has d'introduir un numero");
+        //   }
+        // } else {
+        //   console.log("Has d'introduir un valor");
+        // }
+      
+        // EXERCICI 4
+        // const IVA = 21;
+        // const PREU_MINUT = 0.5;
+        // const PREU_ESTAV = 0.1;
+        // const min = prompt("Introdueix el número de minuts");
+        // if (min) {
+        //     const segons = prompt("Introdueix el número de segons");
+        //     if (segons) {
+        //         const minNumber = Number(min);
+        //         const secNumber = Number(segons);
+        //         if (!Number.isNaN(minNumber) && !Number.isNaN(secNumber)) {
+        //             const segonsTrucada = minNumber * 60 + secNumber;
+        //             const costTrucada = (segonsTrucada / 60) * PREU_MINUT;
+        //             const impSenseIVA = costTrucada + PREU_ESTAV;
+        //             const impIVA = impSenseIVA * (1 + IVA / 100);
+        //             console.log(impSenseIVA, impIVA);
+        //         } 
+        //         else {
+        //             console.log("No has introduït un minut o segons correctes.");
+        //         }
+        //     } 
+        //     else {
+        //         console.log("Has d'intrduir un valor pels segons.");
+        //     }
+        // } else {
+        //     console.log("Has d'intrduir un valor pels minuts.");
+        // }
+
+        // EXERCICI 5
+        // const MAX_DIGITS = 5;
+        // const num = prompt("Introdueix un número de 5 digits");
+        // if (Number(num) && num.length === MAX_DIGITS) {
+        //     if (num[0] === num[num.length - 1]) {
+        //         console.log("El número comença i acaba amb el mateix digit");
+        //     } else {
+        //         console.log("El número no comença i acaba amb el mateix digit");
+        //     }
+        // } else {
+        //     console.log("El valor introduït no és correcte");
+        // }
+
+        // EXERCICI 6
+        // const paraula = prompt("Introdueix una paraula");
+        // if (paraula) {
+        //     const ultimaPos = paraula.length - 1;
+        //     const ultimCar = paraula[ultimaPos];
+        //     if (isNaN(ultimCar)) {
+        //         console.log("L'últim caràcter és un string");
+        //     } else {
+        //         console.log("L'últim caràcter és un número");
+        //     }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 7
+        // const paraula = prompt("Introdueix una paraula");
+        // if (paraula) {
+        //     const resultat =
+        //     paraula[0].toUpperCase() + paraula.slice(1).toLowerCase();
+        //     console.log(resultat);
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        //  EXERCICI 8
+        //  const ARROBA = "@";
+        //  const LLETRA_C = "c";
+        //  const paraula = prompt("Introdueix una paraula");
+        //  if (paraula) {
+        //      if (paraula.indexOf(ARROBA) != -1 && paraula.indexOf(LLETRA_C) != 1) {
+        //          console.log("Existeix una @ i una c.");
+        //      } else {
+        //          console.log("No existeix ni la @ ni la c");
+        //      }
+        //   } else {
+        //     console.log("Has d'introduir una paraula");
+        //   }
+
+        //  EXERCICI 9
+        //  const PUNT = ".";
+        //  const paraula = prompt("Introdueix un fitxer i el seu format");
+        //  if (paraula) {
+        //     if (paraula.indexOf(PUNT) != -1) {
+        //         const inici = paraula.indexOf(PUNT);
+        //         const finalParaula = paraula.length;
+        //         const format = paraula.substring(inici + 1, finalParaula);
+        //         console.log(format);
+        //     } else {
+        //         console.log("El fitxer no té format");
+        //     }
+        //  } else {
+        //     console.log("Has d'introduir una paraula");
+        //  }
+
+        // EXERCICI 10
+        // let paraula = prompt("Introdueix un fitxer i el seu");
+        // if (paraula) {
+        //     if (paraula.includes("javascript")) {
+        //         paraula = paraula.replace("javascript", "JS m'agrada!!");
+        //         console.log(paraula);
+        //     } else {
+        //         console.log("No conté la paraula javascript");
+        //     }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 11
+        // let paraula = prompt("Introdueix una frase");
+        // if (paraula) {
+        //     paraula = paraula.replaceAll(" ", ";");
+        //     console.log(paraula);
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 12
+        // let paraula = prompt("Introdueix un fitxer i el seu");
+        // if (paraula) {
+        //     paraula = paraula.trim(paraula);
+        //     console.log(paraula);
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        //EXERCICI 13
+        // let hora = prompt("Introdueix una hora amb el format hh:mm:ss");
+        // if (hora && hora.indexOf(":") != -1) {
+        //     hora = hora.split(":");
+        //     if (hora.length > 2) {
+        //     console.log(
+        //         "La hora introduïda és " +
+        //         hora[0] +
+        //         ", els minuts " +
+        //         hora[1] +
+        //         ", els segons " +
+        //         hora[2]
+        //     );
+        //     }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 14
+        // let paraula = prompt("Introdueix una paraula");
+        // if (paraula) {
+        //     paraula = paraula.padEnd(10, "*");
+        //     console.log(paraula);
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 15
+        // let num = prompt("Introdueix un número de 5 dígits");
+        // if (num && parseInt(num)) {
+        //     if (num.length < 6) {
+        //     const codi = "USR-" + num.padStart(5, 0);
+        //     console.log(codi);
+        //     } else {
+        //     console.log("El número té més dígits");
+        //     }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 17
+        // let paraula = prompt("Introdueix una paraula");
+        // if (paraula) {
+        //     paraula = paraula.split("");
+        //     for (caracter of paraula) {
+        //         console.log(caracter);
+        //     }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 18
+        // let paraula = prompt("Introdueix una paraula");
+        // if (paraula) {
+        //     paraula = paraula.split(" ");
+        //     for (caracter of paraula) {
+        //     console.log(caracter);
+        //     }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 19
+        // const caracters =
+        // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+        // let length = parseInt(prompt("Introdueix la llargada del password"));
+        // if (length) {
+        //     let carArray = caracters.split("");
+        //     let password = "";
+        //     for (let i = 0; i < length; i++) {
+        //         const posRandom = Math.floor(Math.random() * carArray.length);
+        //         password = password + carArray[posRandom];
+        //     }
+        //     console.log(password);
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 20
+        // const CAR_FORMAT = ".";
+        // const FORMATS = ["jpg", "jpeg", "png", "docx", "pdf", "xlsx"];
+
+        // const paraula = prompt("Introdueix un fitxer i el seu format");
+        // if (paraula) {
+        //     if (paraula.indexOf(CAR_FORMAT) != -1) {
+        //         const inici = paraula.indexOf(CAR_FORMAT);
+        //         const finalParaula = paraula.length;
+        //         const format = paraula.substring(inici + 1, finalParaula);
+        //         console.log(format);
+
+        //         if (FORMATS.includes(format)) {
+        //             console.log("El sistema SI permet el format de fitxer");
+        //         } else {
+        //             console.log("El sistema NO permet el format del fitxer");
+        //         }
+        //     } else {
+        //         console.log("El fitxer no té format");
+        //         }
+        // } else {
+        //     console.log("Has d'introduir una paraula");
+        // }
+
+        // EXERCICI 24
+        // let dataActual = new Date();
+        // let dia = dataActual.getDate();
+        // let mes = dataActual.getMonth(); 
+        // let any = dataActual.getFullYear();
+
+        // let hores = dataActual.getHours();
+        // let minuts = dataActual.getMinutes();
+        // let segons = dataActual.getSeconds();
+
+        // let dataHoraFormatada = `${dia}/${mes}/${any} ${hores}:${minuts}:${segons}`;
+        // console.log(dataHoraFormatada);
+
+        // EXERCICI 25
+        // let data = prompt("Introdueix una data en format DD-MM-AAAA:");
+        // if (data.length !== 10 || data[2] !== "-" || data[5] !== "-") {
+        //     alert("Format de data incorrecte. Utilitza el format DD-MM-AAAA.");
+        // } else {
+        //     const dataSeparada = data.split("-");
+        //     const dataIntroduida = new Date(
+        //         dataSeparada[1] + "/" + dataSeparada[0] + "/" + dataSeparada[2]
+        //     );
+        //     const dataActual = new Date();
+
+        //     if (dataIntroduida > dataActual) {
+        //         console.log("La data introduïda és posterior al dia d'avui");
+        //     } else {
+        //         console.log("La data introduïda és anterior o igual al dia d'avui");
+        //     }
+        // }
+
+        // EXERCICI 26
+        // const MIN_SEC = 60;
+        // const HORA = 24;
+        // let data = prompt("Introdueix una data en format DD-MM-AAAA:");
+        // if (data.length !== 10 || data[2] !== "-" || data[5] !== "-") {
+        //     alert("Format de data incorrecte. Utilitza el format DD-MM-AAAA.");
+        // } else {
+        //     const dataSeparada = data.split("-");
+        //     const dataIntroduida = new Date(
+        //         dataSeparada[1] + "/" + dataSeparada[0] + "/" + dataSeparada[2]
+        //     );
+
+        //     const dataActual = new Date();
+
+        //     if (dataIntroduida < dataActual) {
+        //         console.log("La data introduïda és anterior al dia d'avui");
+        //     } else {
+        //         let diferenciaTemps = dataIntroduida - dataActual;
+
+        //         let segons = MIN_SEC - dataActual.getSeconds();
+        //         let minut = MIN_SEC - dataActual.getMinutes();
+        //         let hora = HORA - dataActual.getHours();
+        //         let dies = dataIntroduida.getDate() - dataActual.getDate();
+        //         let mesos = dataIntroduida.getMonth() - dataActual.getMonth();
+        //         let anys = dataIntroduida.getFullYear() - dataActual.getFullYear();
+        //         console.log("Dies: " + dies, "Mesos: " + mesos, "Anys: " + anys, "Hora:" + hora, "Minuts:" + minut, "Segons: " + segons);
+        //     }
+        // }
+
+
+        // EXERCICI 28
+        // const dies = ["diumenge", "dilluns", "dimarts", "dimecres", "dijous", "divendres", "dissabte"];
+
+        // data = prompt("Introdueix una data en format DD-MM-AAAA:");
+        // if (data.length !== 10 || data[2] !== "-" || data[5] !== "-") {
+        //     alert("Format de data incorrecte. Utilitza el format DD-MM-AAAA.");
+        // } else {
+        //     const dataSeparada = data.split("-");
+        //     const dataIntroduida = new Date(
+        //         dataSeparada[1] + "/" + dataSeparada[0] + "/" + dataSeparada[2]
+        //     );
+
+        //     const diaSetmana = dataIntroduida.getDay();
+
+        //     console.log("El dia de la setmana: " + dies[diaSetmana]);
+        // } 
+
+    </script>
+</body>
+</html>
